@@ -1,0 +1,21 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: $headings-font-family;
+  transition: .5s;
+  z-index: 5;
+
+  &-primary {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      border: none;
+      box-shadow: 0 0 20px 13px rgba(242, 65, 65, 0.36);
+    }
+  }
+}
+

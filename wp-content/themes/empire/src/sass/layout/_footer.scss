@@ -1,0 +1,51 @@
+#app-footer {
+    padding-top: 60px;
+    background: url('../images/bg/footer-bg.jpg') 50% 50% /cover no-repeat;
+    overflow: hidden;
+
+    &.secondary-footer {
+        padding-top: 0;
+        background: transparent;
+    }
+
+    .logo {
+
+        img {
+            width: 145px;
+        }
+    }
+}
+
+.footer-copyr {
+    position: relative;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        flex-direction: row;
+    }
+
+    &-item {
+        text-align: center;
+        font-size: 14px;
+        color: #858fa0;
+
+        a {
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        left: -1000px;
+        right: -1000px;
+        background: rgba(#262f3e, .5);
+        z-index: -3;
+    }
+}

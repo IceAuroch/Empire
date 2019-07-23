@@ -1,0 +1,34 @@
+#sale {
+    margin-top: -60px;
+    background: url('../images/bg/sale-bg.jpg') 0 0 /cover no-repeat;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        background-position: 50% 50%;
+    }
+
+    .section-description {
+
+        &__subtitle {
+            color: #7c889c;
+
+            &::before {
+                background: #7c889c;
+            }
+        }
+    }
+}
+
+.sale-item {
+    padding: 130px 0 70px;
+}
+
+.sale-img {
+    position: relative;
+    height: 100%;
+    z-index: 8;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+}

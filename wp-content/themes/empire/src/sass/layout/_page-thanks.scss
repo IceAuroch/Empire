@@ -1,0 +1,38 @@
+#thanks-page {
+    height: 100vh;
+    background: url('../images/bg/thanks-bg.jpg') 50% 50% / cover no-repeat;
+}
+
+.thanks-page-item {
+    position: relative;
+    z-index: 5;
+
+    &__decor-title {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 100px;
+        line-height: 1;
+        opacity: .1;
+        z-index: -1;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            font-size: 250px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        margin: 0 auto 30px;
+        width: 280px;
+        height: 170px;
+        @extend %img;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            width: 100%;
+            max-width: 420px;
+            height: 276px;
+        }
+    }
+}

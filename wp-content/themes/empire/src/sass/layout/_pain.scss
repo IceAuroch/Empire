@@ -1,0 +1,84 @@
+#pain {
+    margin-bottom: -20px;
+    padding-top: 80px;
+}
+
+.pain-item {
+    position: relative;
+    z-index: 5;
+
+    .section-description {
+
+        &__title {
+    
+            &::before {
+                content: '';
+                @extend %pos;
+                top: 30px;
+                left: -60px;
+                right: -70px;
+                background: rgba(#f8c7c7,.8);
+                z-index: -100;
+            }
+        }
+    }
+}
+
+.pain-description {
+    position: relative;
+    margin-top: 70px;
+    z-index: 9;
+
+    &__title {
+        position: relative;
+        padding: 25px 45px;
+        color: #fff;
+        z-index: 4;
+
+        &::before {
+            content: '';
+            @extend %pos;
+            right: -40px;
+            background: #262f3e;
+            transform: skew(-20deg);
+            z-index: -5;
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        margin-top: -40px;
+        padding: 50px 45px 30px;
+        
+        &::before {
+            content: '';
+            @extend %pos;
+            left: -1500px;
+            right: -100px;
+            background: #e1e6ef;
+            transform: skew(-20deg);
+            z-index: -5;
+        }
+    }
+}
+
+.pain-beforeAfter {
+    @extend %pos;
+    left: 45%;
+    bottom: 20px;
+    margin-top: -80px;
+
+    @media(min-width: 1800px) {
+        margin-top: -250px;
+    }
+    
+    &::before {
+        content: '';
+        @extend %pos;
+        left: -1500px;
+        right: 80%;
+        background: #fff;
+        transform: skew(-20deg);
+        z-index: 4;
+    }
+}

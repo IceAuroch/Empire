@@ -1,0 +1,94 @@
+#advantages {
+    padding: 30px 0 90px;
+    background: $dark;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        padding: 130px 0;
+    }
+}
+
+.advantages-logo {
+    position: relative;
+    z-index: 3;
+
+    img {
+        width: auto;
+    }
+}
+
+.advantages-item {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 5;
+
+    &.active {
+        
+        .decor-animate {
+            transform: translateY(-50%) translateX(0);
+            opacity: 0;
+        }
+
+        .advantages-item__count {
+
+            &::before {
+                left: 0;
+            }
+        }
+    }
+
+    .decor-animate {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(100vh);
+        width: 450px;
+        height: 85px;
+        background: url('../images/icon/decor/wheel.png') 50% 50% /cover no-repeat;
+        z-index: 2;
+        transition: transform .7s linear, opacity 1.4s linear;
+    }
+
+    &__count {
+        @extend %pos;
+        z-index: 3;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        &::before {
+            content: '';
+            @extend %pos;
+            top: 10px;
+            left: 100%;
+            bottom: 10px;
+            background: $primary;
+            z-index: -2;
+            transition: .7s;
+            transition-delay: .3s;
+        }
+    }
+
+    &__description {
+        position: relative;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 25px 50px;
+        color: #fff;
+        z-index: 4;
+
+        &::before {
+            content: '';
+            @extend %pos;
+            background: #2a374c;
+            z-index: -3;
+            transform: skew(-20deg);
+        }
+    }
+}

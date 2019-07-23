@@ -1,0 +1,114 @@
+#app-header {
+    @extend %pos;
+    top: 0;
+    bottom: auto;
+    z-index: 100;
+    overflow: hidden;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        top: 20px;
+    }
+
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+    }
+
+    .btn {
+        padding: 10px 25px;
+    }
+}
+
+.header-row {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        padding: 0;
+    }
+
+    &-item {
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        left: -30px;
+        right: -30px;
+        background: #fff;
+        box-shadow: 0px 13px 13px 0.26px rgba(0, 0, 0, 0.15);
+        transform: skew(-20deg);
+        z-index: -20;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 125px;
+    }
+}
+
+.header-nav-menu {
+
+    li {
+
+        a {
+            position: relative;
+            padding: 25px 0;
+            display: block;
+            font-size: 20px;
+            font-family: $headings-font-family;
+            color: $dark;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                height: 3px;
+                background: $primary;
+                transition: .5s;
+            }
+
+            &:hover {
+                color: #959ba5;
+
+                &::before {
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.phone-list {
+
+    li {
+
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-family: $headings-font-family;
+            color: $dark;
+
+            svg {
+                margin-right: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+#map {
+    @extend %pos;
+    position: relative;
+    height: 250px;
+    top: 35px;
+    z-index: 20;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        position: absolute;
+        height: auto;
+        z-index: 3;
+    }
+}

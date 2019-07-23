@@ -1,0 +1,20 @@
+#response {
+    padding: 80px 0;
+    background: url('../images/bg/response-bg.jpg') 50% 50% /cover no-repeat;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        background: url('../images/bg/response-active-bg.jpg') 50% 50% /cover no-repeat;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    
+    &.active {
+        
+        &::before {
+            opacity: 1;
+        }
+    }
+}

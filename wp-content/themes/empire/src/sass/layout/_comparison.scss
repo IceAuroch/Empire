@@ -1,0 +1,243 @@
+#comparison {
+    padding: 90px 0;
+    background: #fff;
+    z-index: 3;
+
+    .slider-arrow {
+        margin-top: 15px;
+        justify-content: space-between;
+        z-index: 30;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 1300px;
+        }
+    }
+
+    .section-description {
+
+        &::before {
+            content: '';
+            @extend %pos;
+            top: 30px;
+            left: -20px;
+            bottom: -50px;
+            background: rgba(#f8c7c7,.8);
+            z-index: -5;
+        }
+    }
+}
+
+.comparison-slider {
+    width: 100%;
+
+    .flickity-page-dots {
+        bottom: -35px;
+
+        li {
+            width: 30px;
+            height: 4px;
+            background: $primary;
+            transform: skew(-20deg);
+            border: none;
+            border-radius: 0;
+        }
+    }
+
+
+    &-item {
+        width: 100%;
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+            width: 100%;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 35%;
+        }
+    }
+}
+
+.comparison-card {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #d7d7d7;
+
+    &-top {
+        position: relative;
+
+        .img {
+            height: 270px;
+            @extend %img;
+        }
+
+        .title {
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+            padding: 15px 0;
+            display: inline-block;
+            font-size: 18px;
+            z-index: 4;
+            transition: .5s;
+
+            &::before {
+                content: '';
+                @extend %pos;
+                left: -20px;
+                right: -50px;
+                background: #fff;
+                transform: skew(-20deg);
+                z-index: -4;
+            }
+        }
+    }
+
+    &-bottom {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #fff;
+        background: $dark;
+        overflow: hidden;
+        z-index: 6;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            flex-direction: row;
+        }
+
+        &-item {
+            padding: 10px 20px;
+            width: 100%;
+            transition: .5s;
+
+            @media (min-width: map_get($grid-breakpoints, sm)) {
+                width: 50%;
+            }
+
+            &--UA {
+                background: #fff;
+
+                .info {
+
+                    &__logo {
+                        width: 70px;
+                    }
+                }
+            }
+
+            &--USA {
+                color: #c3c9d4;
+
+                .info {
+
+                    &__logo {
+                        width: 80px;
+                    }
+
+                    &-value {
+
+                        .price {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                &-value {
+
+                    .price {
+                        margin-left: 8px;
+                        font-weight: bold;
+                    }
+                }
+
+                &__logo {
+                    margin-right: 15px;
+                    height: 20px;
+                    @extend %img;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        left: 0;
+        right: -50%;
+        opacity: 0;
+        pointer-events: none;
+        bottom: -5px;
+        padding: 15px 60px;
+        color: $dark;
+        font-size: 24px;
+        z-index: 7;
+        transition: .5s;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            left: auto;
+        }
+
+        &:hover {
+            color: $dark;
+        }
+
+        &::before {
+            content: '';
+            @extend %pos;
+            background: $primary;
+            transform: skew(-20deg);
+            z-index: -5;
+        }
+
+        &::after {
+            content: '';
+            @extend %pos;
+            left: 20%;
+            right: -5%;
+            background: $primary;
+            z-index: -5;
+        }
+    }
+
+    &:hover {
+
+        .comparison-card-top {
+
+            .title {
+                bottom: -70px;
+            }
+        }
+
+        .comparison-card-bottom {
+
+            &-item {
+
+                &--UA {
+                    margin-left: -100%;
+
+                    @media (min-width: map_get($grid-breakpoints, sm)) {
+                        margin-left: -50%;
+                    }
+                }
+            }
+        }
+
+        .comparison-card__btn {
+            right: 10px;
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.scroll-down {
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+
+    &__text {
+        position: relative;
+        top: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+        color: #a8b7cf;
+    }
+
+    &__icon {
+        position: relative;
+        width: 2px;
+        height: 80px;
+        background: rgba(#fff, .15);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 30px;
+            background: #fff;
+            box-shadow: 0px 2px 35px 8px rgba(255, 255, 255, 0.2);
+            animation: scrollDown 1.5s linear forwards infinite;
+        }
+
+        @keyframes scrollDown {
+            0% {
+                top: 0;
+            }
+
+            25% {
+                top: 25%;
+            }
+
+            50% {
+                top: 50%;
+            }
+
+            75% {
+                top: 75%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+    }
+}
+
+.decor-car {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @extend %img;
+    z-index: 60;
+    transition: 1.3s;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+        margin-left: -240px;
+        width: 220px;
+        height: 110px;
+        display: block;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        margin-left: -280px;
+        width: 420px;
+        height: 210px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        margin-left: -380px;
+    }
+
+}
+
+
+.beforeAfter {
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+
+    span {
+
+        &::before {
+            border: none;
+            width: 5px;
+            height: 80px;
+            background: $primary;
+            margin-left: -2px;
+        }
+
+        &::after {
+            content: 'Потяните';
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+            opacity: .8;
+        }
+    }
+
+    div {
+
+        &:first-child {
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+        }
+    }
+}

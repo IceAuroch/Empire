@@ -1,0 +1,88 @@
+#intro {
+    padding: 120px 0 0;
+    height: auto;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        height: 100vh;
+        max-height: 1080px;
+        padding: 0;
+    }
+
+    .parallax {
+        @extend %pos;
+        z-index: -5;
+
+        &__item {
+            @extend %pos;
+
+            &--1 {
+                background: url('../images/content/parallax/intro/intro-parallax-item-1.png') 50% 50% /cover no-repeat;
+            }
+
+            &--2 {
+                background: url('../images/content/parallax/intro/intro-parallax-item-2.png') 50% 50% /cover no-repeat;
+            }
+
+            &--3 {
+                background: url('../images/content/parallax/intro/intro-parallax-item-3.png') 50% 50% /cover no-repeat;
+            }
+            &--4 {
+                background: url('../images/content/parallax/intro/intro-parallax-item-4.png') 50% 50% /cover no-repeat;
+            }
+        }
+    }
+}
+
+.intro-item {
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    color: #fff;
+    z-index: 10;
+
+    &__title {
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+
+
+        &::before {
+            content: '';
+            @extend %pos;
+            top: auto;
+            width: 60px;
+            height: 4px;
+            background: $primary;
+            transform: skew(-20deg);
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            font-size: 20px;
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        top: 35px;
+        left: -1500px;
+        right: -20px;
+        background: rgba($dark, .8);
+        z-index: -5;
+    }
+}
+
+.intro-order {
+    position: relative;
+    padding-bottom: 10px;
+
+    &__description {
+        font-style: italic;
+        font-size: 16px;
+    }
+}

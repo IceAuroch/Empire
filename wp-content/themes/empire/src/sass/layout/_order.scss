@@ -1,0 +1,8 @@
+#order {
+    padding: 40px 0;
+    background: url('../images/bg/order-bg.jpg') 50% 50% /cover no-repeat;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        padding: 90px 0;
+    }
+}

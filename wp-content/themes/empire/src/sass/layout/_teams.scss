@@ -1,0 +1,89 @@
+#teams {
+    padding: 100px 0 140px;
+    margin-bottom: -40px;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        background: url('../images/icon/decor/pattern.png');
+    }
+
+    .slider-arrow {
+        margin-top: 50px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            margin-top: 0;
+            left: 60px;
+        }
+    }
+}
+
+.teams-slider {
+
+    .flickity-page-dots {
+        bottom: -35px;
+
+        li {
+            width: 30px;
+            height: 4px;
+            background: $primary;
+            transform: skew(-20deg);
+            border: none;
+            border-radius: 0;
+        }
+    }
+}
+
+.teams-col {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 1px;
+    padding: 0 15px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 33.3333%;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        width: 25%;
+    }
+}
+
+.teams-item {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    transition: .5s;
+
+    &:hover {
+        box-shadow: 0px 10px 16px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .img {
+        padding-top: 320px;
+        @extend %img;
+    }
+
+    .name {
+        position: relative;
+        border-top: 1px solid #e1e1e1;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background: #fff;
+        z-index: 4;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 35px;
+            bottom: 0;
+            width: 90px;
+            background: $primary;
+            transform: skew(-20deg);
+            z-index: -4;
+        }
+    }
+}
