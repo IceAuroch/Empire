@@ -5,10 +5,10 @@
             <div class="col-sm-10 col-lg-8">
                 <div class="section-description mb-4">
                     <h2 class="section-description__title">
-                        Работая с нами, не просто получаете помощь на всех этапах
+                        <?= get_field('stage_subtitle', 130); ?>
                     </h2>
                     <div class="section-description__subtitle">
-                        Мы берем полностью все процессы на себя:
+                        <?= get_field('stage_second_subtitle', 130); ?>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="stages-card-description">
                             <p>Авто на проверенных аукционах.
-                                Находим машину в оптимальном состоянии и по лучшей цене]</p>
+                                Находим машину в оптимальном состоянии и по лучшей цене</p>
                         </div>
                     </div>
 

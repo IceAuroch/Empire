@@ -13,10 +13,10 @@ if ($team->have_posts()):
             <div class="col-sm-6">
                 <div class="section-description mb-5">
                     <h2 class="section-description__title">
-                        Наша команда
+                        <?= get_field('team_second_title', 119); ?>
                     </h2>
                     <div class="section-description__subtitle">
-                        Высококлассые профессионалы своего дела
+                        <?= get_field('team_subtitle', 119); ?>
                     </div>
                 </div>
             </div>

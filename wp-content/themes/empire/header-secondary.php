@@ -30,16 +30,9 @@
 
 <body>
 
-<img height="1" width="1" style="display:none"
-     src="https://www.facebook.com/tr?id=1434976263306601&ev=PageView&noscript=1"
-/>
-<img height="1" width="1" style="display:none"
-     src="https://www.facebook.com/tr?id=1434976263306601&ev=CompleteRegistration&noscript=1"
-/>
-
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="phone-icon" viewBox="0 0 485.213 485.212">
-        <path fill="#edc939" d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
+        <path fill="#f24141" d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
                 c133.978,0,242.604-108.631,242.604-242.606C485.212,108.628,376.585,0,242.607,0z M370.719,353.989l-19.425,19.429
                 c-3.468,3.463-13.623,5.624-13.949,5.624c-61.452,0.536-120.621-23.602-164.095-67.08c-43.593-43.618-67.759-102.998-67.11-164.657
                 c0-0.028,2.224-9.892,5.689-13.324l19.424-19.427c7.108-7.141,20.762-10.368,30.327-7.168l4.086,1.363
@@ -79,9 +72,9 @@
                     </div>
                     <div class="header-row-item d-none d-lg-flex">
                         <ul class="header-nav-menu d-flex justify-content-between align-items-center w-100">
-                            <li><a href="#comparison" class="scroll-link">Сравнить цены</a></li>
-                            <li><a href="#advantages" class="scroll-link">Почему мы?</a></li>
-                            <li><a href="#contacts" class="scroll-link">Наши офисы</a></li>
+                            <li><a href="<?= site_url(); ?>#comparison">Сравнить цены</a></li>
+                            <li><a href="<?= site_url(); ?>#advantages">Почему мы?</a></li>
+                            <li><a href="<?= site_url(); ?>#contacts">Наши офисы</a></li>
                         </ul>
                     </div>
                     <div class="header-row-item  d-none d-sm-flex">
@@ -124,14 +117,14 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-5 pr-sm-0">
                     <ul class="menu-nav">
-                        <li><a href="#pain" class="scroll-link">Вы хотите хорошее авто за адекватные деньги?</a></li>
-                        <li><a href="#comparison" class="scroll-link">Сравните цены на некоторые популярные модели</a></li>
-                        <li><a href="#sale" class="scroll-link">Оставьте заявку и мы найдем авто по лучшей цене</a></li>
-                        <li><a href="#reviews" class="scroll-link">Отзывы</a></li>
-                        <li><a href="#saving" class="scroll-link">Зачем переплачивать?</a></li>
-                        <li><a href="#stages" class="scroll-link">Сотрудничество</a></li>
-                        <li><a href="#teams" class="scroll-link">Команда</a></li>
-                        <li><a href="#contacts" class="scroll-link">Контакты</a></li>
+                        <li><a href="<?= site_url(); ?>#pain"><?= get_the_title(74); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#comparison"><?= get_the_title(80); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#sale"><?= get_the_title(82); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#reviews"><?= get_the_title(136); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#saving"><?= get_the_title(84); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#stages"><?= get_the_title(130); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#teams"><?= get_the_title(119); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#contacts"<?= get_the_title(90); ?></a></li>
                     </ul>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 if (isset($_POST['name']) && isset($_POST['phone'])) {
 	$name = $_POST['name'];
 	$phone = $_POST['phone'];
+	$car = isset($_POST['car']) ? $_POST['car'] : 'Обратная связь';
 	$to = $_POST['admin_email'];
 	$subject = isset($_POST['subject']) ? $_POST['subject'] : 'Форма заявки с лендинга Empire';
 	$message = "
@@ -13,6 +14,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         <body>
         <h2>Заявка от {$name}</h2>
         <p>Телефон: {$phone}</p>
+        <p>Машина: {$car}</p>  
         </body>
         </html>
     ";

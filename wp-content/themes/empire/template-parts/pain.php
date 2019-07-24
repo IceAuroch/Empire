@@ -25,7 +25,7 @@
                 </div>
                 <div class="pain-description">
                     <h3 class="pain-description__title">
-                        И что остается?
+                        <?= get_field('paid_down_title', 74); ?>
                     </h3>
                     <div class="pain-description__subtitle">
                         <?= get_field('pain_down_subtitle', 74)?>

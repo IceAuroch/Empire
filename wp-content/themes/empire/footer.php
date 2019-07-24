@@ -11,14 +11,14 @@
             </div>
             <div class="col-sm-5 pr-sm-0">
                 <ul class="menu-nav">
-                    <li><a href="#pain" class="scroll-link">Вы хотите хорошее авто за адекватные деньги?</a></li>
-                    <li><a href="#comparison" class="scroll-link">Сравните цены на некоторые популярные модели</a></li>
-                    <li><a href="#sale" class="scroll-link">Оставьте заявку и мы найдем авто по лучшей цене</a></li>
-                    <li><a href="#reviews" class="scroll-link">Отзывы</a></li>
-                    <li><a href="#saving" class="scroll-link">Зачем переплачивать?</a></li>
-                    <li><a href="#stages" class="scroll-link">Сотрудничество</a></li>
-                    <li><a href="#teams" class="scroll-link">Команда</a></li>
-                    <li><a href="#contacts" class="scroll-link">Контакты</a></li>
+                    <li><a href="#pain" class="scroll-link"><?= get_the_title(74); ?></a></li>
+                    <li><a href="#comparison" class="scroll-link"><?= get_the_title(80); ?></a></li>
+                    <li><a href="#sale" class="scroll-link"><?= get_the_title(82); ?></a></li>
+                    <li><a href="#reviews" class="scroll-link"><?= get_the_title(136); ?></a></li>
+                    <li><a href="#saving" class="scroll-link"><?= get_the_title(84); ?></a></li>
+                    <li><a href="#stages" class="scroll-link"><?= get_the_title(130); ?></a></li>
+                    <li><a href="#teams" class="scroll-link"><?= get_the_title(119); ?></a></li>
+                    <li><a href="#contacts" class="scroll-link"><?= get_the_title(90); ?></a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-lg-3 p-lg-0 ml-auto mr-0">
@@ -26,7 +26,7 @@
                     Доверьтесь профессионалам
                 </h3>
 
-                <?php require_once('template-parts/modules/form.php'); ?>
+                <?php require('template-parts/modules/form.php'); ?>
 
             </div>
             <div class="col-12">

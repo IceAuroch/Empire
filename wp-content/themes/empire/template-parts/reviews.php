@@ -11,7 +11,7 @@ if ($feedback->have_posts()):
             <div class="row no-gutters">
                 <div class="col-12">
                     <h2 class="section-title text-center mb-5">
-                        Отзывы
+                        <?= get_the_title(136); ?>
                     </h2>
                     <div class="reviews-slider">
 

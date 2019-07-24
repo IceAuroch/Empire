@@ -90,10 +90,10 @@ $comparison = new WP_Query([
             </h3>
         </div>
         <div class="custom-modal-body">
-            <form action="/send.php" method="post">
+            <form action="<?php echo get_theme_file_uri('mail-send.php'); ?>" method="post">
                 <input type="hidden" name="car" value="">
                 <input type="hidden" name="title" value="Выбор авто">
-                <input type="hidden" name="utm" value="<?= implode('&', $_GET); ?>">
+                <input type="hidden" name="admin_email" value="<?= get_option('admin_email'); ?>">
                 <div class="form-column">
                     <div class="form-group">
                         <label for="user-name--comparison" class="label-placeholder">Введите ваше имя</label>

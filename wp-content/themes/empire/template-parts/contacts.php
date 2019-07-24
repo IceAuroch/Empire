@@ -7,10 +7,10 @@
                 <div class="contacts-item">
                     <div class="section-description mb-4">
                         <div class="section-description__subtitle">
-                            Наши контакты
+                            <?= get_field('contact_subtitle', 90); ?>
                         </div>
                         <h2 class="section-description__title text-primary">
-                            Наш офис в Киеве
+                            <?= get_field('contact_second_subtitle', 90); ?>
                         </h2>
                     </div>
                     <ul class="contacts-list">
