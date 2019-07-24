@@ -2,7 +2,7 @@
 if (isset($_POST['name']) && isset($_POST['phone'])) {
 	$name = $_POST['name'];
 	$phone = $_POST['phone'];
-	$car = isset($_POST['car']) ? $_POST['car'] : 'Обратная связь';
+	$car = isset($_POST['car']) ? $_POST['car'] : 'Форма без машины';
 	$to = $_POST['admin_email'];
 	$subject = isset($_POST['subject']) ? $_POST['subject'] : 'Форма заявки с лендинга Empire';
 	$message = "

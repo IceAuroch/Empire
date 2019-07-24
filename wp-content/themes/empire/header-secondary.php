@@ -73,7 +73,7 @@
                     <div class="header-row-item d-none d-lg-flex">
                         <ul class="header-nav-menu d-flex justify-content-between align-items-center w-100">
                             <li><a href="<?= site_url(); ?>#comparison">Сравнить цены</a></li>
-                            <li><a href="<?= site_url(); ?>#advantages">Почему мы?</a></li>
+                            <li><a href="<?= site_url(); ?>#advantages"><?= get_the_title(165); ?></a></li>
                             <li><a href="<?= site_url(); ?>#contacts">Наши офисы</a></li>
                         </ul>
                     </div>
