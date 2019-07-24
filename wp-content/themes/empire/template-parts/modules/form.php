@@ -1,6 +1,6 @@
-<form method="post" action="/send.php">
+<form method="post" action="<?php echo get_theme_file_uri('mail-send.php'); ?>">
 	<input type="hidden" name="title" value="Заявка">
-    <input type="hidden" name="utm" value="<?= implode('&', $_GET); ?>">
+    <input type="hidden" name="admin_email" value="<?= get_option('admin_email'); ?>">
 	<div class="form-column">
 		<div class="form-group">
 			<label for="user-name--<?php echo $name = generateRandomString() ?>" class="label-placeholder">Введите ваше имя</label>

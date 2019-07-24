@@ -87,12 +87,11 @@
                     <div class="header-row-item  d-none d-sm-flex">
                         <ul class="phone-list">
                             <li>
-                                <a href="<?php $phone = get_post_meta('37', 'telephon', true);
-                                echo("tel:+38" . str_replace([' '], '', $phone)); ?>">
+                                <a href="tel: <?= get_theme_mod('phone'); ?>">
                                     <svg width="20" height="20">
                                         <use xlink:href="#phone-icon"></use>
                                     </svg>
-                                    <?= $phone ?>
+                                    <?= get_theme_mod('phone'); ?>
                                 </a>
                                 <div class="small">по Украине бесплатно</div>
                             </li>

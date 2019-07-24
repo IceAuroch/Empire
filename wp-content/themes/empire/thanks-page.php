@@ -29,9 +29,6 @@ get_header('secondary');
                 На главную
             </a>
 
-            <script src="//widget.manychat.com/221910975224285.js" async></script>
-            <div class="mcwidget-embed mt-3" data-widget-id="4020088"></div>
-
         </div>
 
     </div>
