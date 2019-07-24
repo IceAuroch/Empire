@@ -15,117 +15,52 @@
         </div>
         <div class="row">
             <div class="col-sm-10 col-lg-7 mx-auto mx-lg-0">
-                <div class="stages-column">
-                    <div class="stages-card">
-                        <div class="stages-card-secondary">
-                            <div class="icon">
-                                <svg width="30" height="30">
-                                    <use xlink:href="#search-icon"></use>
-                                </svg>
+
+                <?php if (have_rows('stage_items', 130)): ?>
+
+                    <div class="stages-column">
+
+                        <?php while (have_rows('stage_items', 130)): the_row(); ?>
+
+                            <div class="stages-card">
+                                <div class="stages-card-secondary">
+                                    <div class="icon">
+                                        <svg width="30" height="30">
+                                            <use xlink:href="<?= get_sub_field('stage_item_icon'); ?>"></use>
+                                        </svg>
+                                    </div>
+                                    <h4 class="title"><?= get_sub_field('stage_item_title'); ?></h4>
+                                </div>
+                                <div class="stages-card-description">
+                                    <p><?= get_sub_field('stage_item_text'); ?></p>
+                                </div>
                             </div>
-                            <h4 class="title">Подбираем</h4>
-                        </div>
-                        <div class="stages-card-description">
-                            <p>Авто на проверенных аукционах.
-                                Находим машину в оптимальном состоянии и по лучшей цене</p>
-                        </div>
+
+                        <?php endwhile; ?>
+
                     </div>
 
-                    <div class="stages-card">
-                        <div class="stages-card-secondary">
-                            <div class="icon">
-                                <svg width="30" height="30">
-                                    <use xlink:href="#checked-icon"></use>
-                                </svg>
-                            </div>
-                            <h4 class="title">Проверяем</h4>
-                        </div>
-                        <div class="stages-card-description">
-                            <p>Автомобиль в 11 этапов. Вы будете в курсе как обслуживалось это авто, кто и как им
-                                пользовался, в каком состоянии ходовая и тд.</p>
-                        </div>
-                    </div>
+                <?php endif; ?>
 
-                    <div class="stages-card">
-                        <div class="stages-card-secondary">
-                            <div class="icon">
-                                <svg width="30" height="30">
-                                    <use xlink:href="#edit-icon"></use>
-                                </svg>
-                            </div>
-                            <h4 class="title">Оформляем</h4>
-                        </div>
-                        <div class="stages-card-description">
-                            <p>Все необходимые документы для покупки автомобиля в США</p>
-                        </div>
-                    </div>
-
-                    <div class="stages-card">
-                        <div class="stages-card-secondary">
-                            <div class="icon">
-                                <svg width="25" height="30">
-                                    <use xlink:href="#control-icon"></use>
-                                </svg>
-                            </div>
-                            <h4 class="title">Контролируем</h4>
-                        </div>
-                        <div class="stages-card-description">
-                            <p>Логистику автомобиля сначала по США, а потом обеспечиваем
-                                его безопасную доставку в Украину</p>
-                        </div>
-                    </div>
-
-                    <div class="stages-card">
-                        <div class="stages-card-secondary">
-                            <div class="icon">
-                                <svg width="30" height="20">
-                                    <use xlink:href="#clearance-icon"></use>
-                                </svg>
-                            </div>
-                            <h4 class="title">Растамаживаем</h4>
-                        </div>
-                        <div class="stages-card-description">
-                            <p>И готовим все необходимые документы для растаможки</p>
-                        </div>
-                    </div>
-
-                    <div class="stages-card">
-                        <div class="stages-card-secondary">
-                            <div class="icon">
-                                <svg width="40" height="30">
-                                    <use xlink:href="#delivery-icon"></use>
-                                </svg>
-                            </div>
-                            <h4 class="title">Доставляем</h4>
-                        </div>
-                        <div class="stages-card-description">
-                            <p>Автомобиль и передаем его Вам. А также ключи и все необходимые документы к нему</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
             <div class="col-sm-6 col-lg-5 mx-auto mx-lg-0">
-                <div class="stages-tabs-img d-none d-lg-block">
-                    <div class="stages-tabs-img__item" style="background-image:
-                            url(<?php echo get_theme_file_uri('images/content/stages/stages-tabs-item-1.png'); ?>)">
+
+                <?php if (have_rows('stage_items', 130)): ?>
+
+                    <div class="stages-tabs-img d-none d-lg-block">
+
+                        <?php while (have_rows('stage_items', 130)): the_row(); ?>
+
+                            <div class="stages-tabs-img__item" style="background-image:
+                                    url(<?= get_sub_field('stage_item_image')['url']; ?>)">
+                            </div>
+
+                        <?php endwhile; ?>
+
                     </div>
-                    <div class="stages-tabs-img__item" style="background-image:
-                            url(<?php echo get_theme_file_uri('images/content/stages/stages-tabs-item-2.png'); ?>)">
-                    </div>
-                    <div class="stages-tabs-img__item" style="background-image:
-                            url(<?php echo get_theme_file_uri('images/content/stages/stages-tabs-item-3.png'); ?>)">
-                    </div>
-                    <div class="stages-tabs-img__item" style="background-image:
-                            url(<?php echo get_theme_file_uri('images/content/stages/stages-tabs-item-4.png'); ?>)">
-                    </div>
-                    <div class="stages-tabs-img__item" style="background-image:
-                            url(<?php echo get_theme_file_uri('images/content/stages/stages-tabs-item-5.png'); ?>)">
-                    </div>
-                    <div class="stages-tabs-img__item" style="background-image:
-                            url(<?php echo get_theme_file_uri('images/content/stages/stages-tabs-item-6.png'); ?>)">
-                    </div>
-                </div>
+
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
