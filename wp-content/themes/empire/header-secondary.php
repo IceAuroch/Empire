@@ -8,6 +8,7 @@
     <?php wp_head(); ?>
 
     <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
@@ -74,7 +75,7 @@
                         <ul class="header-nav-menu d-flex justify-content-between align-items-center w-100">
                             <li><a href="<?= site_url(); ?>#comparison">Сравнить цены</a></li>
                             <li><a href="<?= site_url(); ?>#advantages"><?= get_the_title(165); ?></a></li>
-                            <li><a href="<?= site_url(); ?>#contacts">Наши офисы</a></li>
+                            <li><a href="<?= site_url(); ?>#contacts"><?= get_field('contact_head_title', 90); ?></a></li>
                         </ul>
                     </div>
                     <div class="header-row-item  d-none d-sm-flex">
@@ -91,7 +92,7 @@
                         </ul>
                     </div>
                     <div class="header-row-item  d-none d-sm-flex">
-                        <a href="#comparison" class="btn btn-primary scroll-link">
+                        <a href="<?= site_url(); ?>#comparison" class="btn btn-primary ">
                             Подобрать авто
                         </a>
                     </div>
