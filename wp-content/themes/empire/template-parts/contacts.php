@@ -1,6 +1,11 @@
 <!-- Contacts -->
 <section id="contacts">
-    <div id="map"></div>
+    <div id="map">
+        <input type="hidden" name="Lat" value="<?= get_theme_mod('address_lat'); ?>">
+        <input type="hidden" name="Long" value="<?= get_theme_mod('address_long'); ?>">
+        <input type="hidden" name="Lat2" value="<?= get_theme_mod('address_lat2'); ?>">
+        <input type="hidden" name="Long2" value="<?= get_theme_mod('address_long2'); ?>">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-5 col-lg-4">

@@ -2,7 +2,7 @@
     'post_type' => 'reviews',
 ]);
 if ($feedback->have_posts()):
-?>
+    ?>
 
 
     <!-- Reviews -->
@@ -26,7 +26,7 @@ if ($feedback->have_posts()):
                                         <?php the_content(); ?>
                                     </p>
                                     <h5 class="content__description">
-                                        <?php echo the_title(); ?>
+                                        <?= the_title(); ?>
                                     </h5>
                                 </div>
                             </div>

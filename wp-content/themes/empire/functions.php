@@ -112,6 +112,19 @@ function generateRandomString($length = 10)
             'label' => 'Адресс ссылка',
             'type' => 'text',
         ]);
+        $wp_customize->add_setting('address_long');
+        $wp_customize->add_control('address_long', [
+            'section' => 'contacts',
+            'label' => 'Долгота',
+            'type' => 'text',
+        ]);
+        $wp_customize->add_setting('address_lat');
+        $wp_customize->add_control('address_lat', [
+            'section' => 'contacts',
+            'label' => 'Широта',
+            'type' => 'text',
+        ]);
+
         $wp_customize->add_setting('address2');
         $wp_customize->add_control('address2', [
             'section' => 'contacts',
@@ -124,6 +137,20 @@ function generateRandomString($length = 10)
             'label' => 'Адресс ссылка 2',
             'type' => 'text',
         ]);
+        $wp_customize->add_setting('address_long2');
+        $wp_customize->add_control('address_long2', [
+            'section' => 'contacts',
+            'label' => 'Долгота2',
+            'type' => 'text',
+        ]);
+        $wp_customize->add_setting('address_lat2');
+        $wp_customize->add_control('address_lat2', [
+            'section' => 'contacts',
+            'label' => 'Широта2',
+            'type' => 'text',
+        ]);
+
+
         $wp_customize->add_setting('phone');
         $wp_customize->add_control('phone', [
             'section' => 'contacts',

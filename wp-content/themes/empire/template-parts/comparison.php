@@ -11,10 +11,10 @@ $comparison = new WP_Query([
                 <div class="col-sm-9 col-lg-7">
                     <div class="section-description">
                         <h2 class="section-description__title">
-                            <?= get_the_title('80')?>
+                            <?= get_the_title('80') ?>
                         </h2>
                         <div class="section-description__subtitle">
-                            <?= get_field('comparison_subtitle', 80)?>
+                            <?= get_field('comparison_subtitle', 80) ?>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ $comparison = new WP_Query([
             </h3>
         </div>
         <div class="custom-modal-body">
-            <form action="<?php echo get_theme_file_uri('mail-send.php'); ?>" method="post">
+            <form action="<?= get_theme_file_uri('mail-send.php'); ?>" method="post">
                 <input type="hidden" name="car" value="">
                 <input type="hidden" name="title" value="Выбор авто">
                 <input type="hidden" name="admin_email" value="<?= get_option('admin_email'); ?>">

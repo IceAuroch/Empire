@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-2 mb-3 mb-lg-0">
                 <a href="#intro" class="logo scroll-link">
-                    <img src="<?php echo get_theme_file_uri('images/icon/logo/logo.png');?>" alt="Empire logo">
+                    <img src="<?= get_theme_file_uri('images/icon/logo/logo.png'); ?>" alt="Empire logo">
                 </a>
             </div>
             <div class="col-sm-5 pr-sm-0">
@@ -23,7 +23,7 @@
             </div>
             <div class="col-sm-4 col-lg-3 p-lg-0 ml-auto mr-0">
                 <h3 class="section-title text-white mb-4">
-                    Доверьтесь профессионалам
+                    <?= get_field('main_burger_title', 92); ?>
                 </h3>
 
                 <?php require('template-parts/modules/form.php'); ?>
@@ -32,7 +32,7 @@
             <div class="col-12">
                 <div class="footer-copyr">
                     <div class="footer-copyr-item mb-3 mb-sm-0">
-                        2019 Все права защищены
+                        <?= date('Y'); ?> Все права защищены
                     </div>
                     <div class="footer-copyr-item">
                         Дизайн и разработка сайта компании <a href="https://impressionbureau.pro" target="_blank">Impression.Bureau</a>

@@ -1,5 +1,4 @@
-
-    </main>
+</main>
 
 <!-- App-footer -->
 <footer id="app-footer" class="secondary-footer">
@@ -8,7 +7,7 @@
             <div class="col-12">
                 <div class="footer-copyr">
                     <div class="footer-copyr-item mb-3 mb-sm-0">
-                        2019 Все права защищены
+                        <?= date('Y'); ?> Все права защищены
                     </div>
                     <div class="footer-copyr-item">
                         Дизайн и разработка сайта компании <a href="https://impressionbureau.pro" target="_blank">Impression.Bureau</a>
@@ -20,7 +19,7 @@
 </footer>
 
 <!-- Script -->
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 </body>
 
 </html>

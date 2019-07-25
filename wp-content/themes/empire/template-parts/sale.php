@@ -12,12 +12,12 @@
                             <?= get_the_title(82); ?>
                         </h2>
                     </div>
-					<?php include('modules/form.php'); ?>
+                    <?php include('modules/form.php'); ?>
                 </div>
             </div>
             <div class="col-sm-7">
                 <div class="sale-img d-none d-lg-block">
-                    <img src="<?php echo get_theme_file_uri('images/content/sale/sale-item-1.png'); ?>  " alt="">
+                    <img src="<?= get_theme_file_uri('images/content/sale/sale-item-1.png'); ?>  " alt="">
                 </div>
             </div>
         </div>

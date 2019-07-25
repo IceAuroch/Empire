@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-4 col-lg-6">
                 <div class="advantages-logo d-none d-sm-block">
-                    <img src="<?php echo get_theme_file_uri('images/icon/logo/logo-icon-dark.png'); ?>" alt="">
+                    <img src="<?= get_theme_file_uri('images/icon/logo/logo-icon-dark.png'); ?>" alt="">
                 </div>
             </div>
 
@@ -12,7 +12,8 @@
                 $count = 0; ?>
 
                 <div class="col-sm-8 col-lg-6">
-                    <?php while (have_rows('advantages_items', 165)) : the_row(); $count++; ?>
+                    <?php while (have_rows('advantages_items', 165)) : the_row();
+                        $count++; ?>
                         <div class="advantages-item">
                             <div class="advantages-item__count"><span><?= $count; ?></span></div>
                             <div class="advantages-item__description">
@@ -38,5 +39,5 @@
 
 <!-- Car -->
 <div id='decor-car' class="decor-car" style="background-image:
-    url(<?php echo get_theme_file_uri('images/content/advantages/11594_st1280_089.png'); ?>">
+    url(<?= get_theme_file_uri('images/content/advantages/11594_st1280_089.png'); ?>">
 </div>

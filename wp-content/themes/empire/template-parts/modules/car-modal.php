@@ -61,7 +61,7 @@
         </table>
     </div>
     <div class="car-modal__footer d-flex align-items-center">
-        <img src="<?php echo get_theme_file_uri('images/content/comparison/comparison-logo-2.png'); ?>"
+        <img src="<?= get_theme_file_uri('images/content/comparison/comparison-logo-2.png'); ?>"
              style="height: 15px; width: auto; margin-right: 15px;" alt="">
         <div class="info-value">$ <strong class="car-modal__price text-primary"></strong></div>
         <div class="ml-auto">

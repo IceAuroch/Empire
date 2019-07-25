@@ -56,7 +56,7 @@ $car = [
                 </div>
                 <div class="info-value">$
                     <span class="price">
-                         <?php echo get_field('price_in_ua', $post->ID, 'text_field'); ?>
+                         <?= get_field('price_in_ua', $post->ID, 'text_field'); ?>
                     </span>
                 </div>
             </div>
@@ -65,16 +65,16 @@ $car = [
             <div class="title">Цена в США</div>
             <div class="info">
                 <div class="info__logo" style="background-image:
-                    url(<?php echo get_theme_file_uri('images/content/comparison/comparison-logo-2.png'); ?>">
+                    url(<?= get_theme_file_uri('images/content/comparison/comparison-logo-2.png'); ?>">
                 </div>
                 <div class="info-value">$
                     <span class="price">
-                        <?php echo get_field('price_in_usa', $post->ID, 'text_field'); ?>
+                        <?= get_field('price_in_usa', $post->ID, 'text_field'); ?>
                     </span>
                 </div>
             </div>
         </div>
     </div>
-    <a href="#" class="btn comparison-card__btn open-modal-car" data-car='<?php echo json_encode($car) ?>'>Хочу это
+    <a href="#" class="btn comparison-card__btn open-modal-car" data-car='<?= json_encode($car) ?>'>Хочу это
         авто</a>
 </div>

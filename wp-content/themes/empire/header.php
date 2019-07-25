@@ -8,8 +8,9 @@
     <?php wp_head(); ?>
 
 
-    <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
@@ -41,32 +42,35 @@
                 c0-0.028,2.224-9.892,5.689-13.324l19.424-19.427c7.108-7.141,20.762-10.368,30.327-7.168l4.086,1.363
                 c9.537,3.197,19.55,13.742,22.185,23.457l9.771,35.862c2.635,9.743-0.919,23.604-8.025,30.712l-12.97,12.972
                 c12.734,47.142,49.723,84.138,96.873,96.903l12.965-12.975c7.141-7.141,20.997-10.692,30.719-8.061l35.857,9.806
-                c9.717,2.67,20.26,12.62,23.456,22.154l1.363,4.145C381.028,333.262,377.826,346.913,370.719,353.989z" />
+                c9.717,2.67,20.26,12.62,23.456,22.154l1.363,4.145C381.028,333.262,377.826,346.913,370.719,353.989z"/>
     </symbol>
 
     <symbol id="prev-arrow-icon" viewBox="0 0 32.635 32.635">
         <path d="M32.135,16.817H0.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h31.635c0.276,0,0.5,0.224,0.5,0.5
-	        	S32.411,16.817,32.135,16.817z" />
+	        	S32.411,16.817,32.135,16.817z"/>
         <path d="M13.037,29.353c-0.128,0-0.256-0.049-0.354-0.146L0.146,16.669C0.053,16.575,0,16.448,0,16.315s0.053-0.26,0.146-0.354
 	        	L12.684,3.429c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L1.207,16.315l12.184,12.184c0.195,0.195,0.195,0.512,0,0.707
-	        	C13.293,29.304,13.165,29.353,13.037,29.353z" />
+	        	C13.293,29.304,13.165,29.353,13.037,29.353z"/>
     </symbol>
 
     <symbol id="next-arrow-icon" viewBox="0 0 32.635 32.635">
         <path d="M32.135,16.817H0.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h31.635c0.276,0,0.5,0.224,0.5,0.5
-	        	S32.411,16.817,32.135,16.817z" />
+	        	S32.411,16.817,32.135,16.817z"/>
         <path d="M19.598,29.353c-0.128,0-0.256-0.049-0.354-0.146c-0.195-0.195-0.195-0.512,0-0.707l12.184-12.184L19.244,4.136
 	        	c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0l12.537,12.533c0.094,0.094,0.146,0.221,0.146,0.354
-	        	s-0.053,0.26-0.146,0.354L19.951,29.206C19.854,29.304,19.726,29.353,19.598,29.353z" />
+	        	s-0.053,0.26-0.146,0.354L19.951,29.206C19.854,29.304,19.726,29.353,19.598,29.353z"/>
     </symbol>
 
     <symbol id="search-icon" viewBox="0 0 129 129">
-        <path fill="#f24141" d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z" />
+        <path fill="#f24141"
+              d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
     </symbol>
 
     <symbol id="checked-icon" viewBox="0 0 129 129">
-        <path fill="#f24141" d="m40.5,61.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l18.9,18.9c0.8,0.8 1.8,1.2 2.9,1.2 0.1,0 0.1,0 0.2,0 1.1-0.1 2.2-0.6 3-1.5l47.3-56.7c1.4-1.7 1.2-4.3-0.5-5.8-1.7-1.4-4.3-1.2-5.8,0.5l-44.5,53.3-15.7-15.7z" />
-        <path fill="#f24141" d="m95.1,15.3c-23-14.4-52.5-11-71.7,8.2-22.6,22.6-22.6,59.5 7.10543e-15,82.1 11.3,11.3 26.2,17 41,17s29.7-5.7 41-17c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9,1.2-2.5,3.7-1.3,5.6 12.5,19.8 9.6,45.2-7,61.8-19.4,19.4-51.1,19.4-70.5,0-19.4-19.4-19.4-51.1 0-70.5 16.6-16.5 41.9-19.4 61.7-7.1 1.9,1.2 4.4,0.6 5.6-1.3 1.2-1.9 0.6-4.4-1.3-5.6z" />
+        <path fill="#f24141"
+              d="m40.5,61.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l18.9,18.9c0.8,0.8 1.8,1.2 2.9,1.2 0.1,0 0.1,0 0.2,0 1.1-0.1 2.2-0.6 3-1.5l47.3-56.7c1.4-1.7 1.2-4.3-0.5-5.8-1.7-1.4-4.3-1.2-5.8,0.5l-44.5,53.3-15.7-15.7z"/>
+        <path fill="#f24141"
+              d="m95.1,15.3c-23-14.4-52.5-11-71.7,8.2-22.6,22.6-22.6,59.5 7.10543e-15,82.1 11.3,11.3 26.2,17 41,17s29.7-5.7 41-17c19.3-19.3 22.6-48.9 8.1-71.9-1.2-1.9-3.7-2.5-5.6-1.3-1.9,1.2-2.5,3.7-1.3,5.6 12.5,19.8 9.6,45.2-7,61.8-19.4,19.4-51.1,19.4-70.5,0-19.4-19.4-19.4-51.1 0-70.5 16.6-16.5 41.9-19.4 61.7-7.1 1.9,1.2 4.4,0.6 5.6-1.3 1.2-1.9 0.6-4.4-1.3-5.6z"/>
     </symbol>
 
     <symbol id="edit-icon" viewBox="0 0 520.2 520.2">
@@ -77,30 +81,30 @@
                 c-9.562,0-19.125-7.65-19.125-19.125V40.163c0-9.562,7.65-19.125,19.125-19.125H229.5v95.625c0,21.038,17.212,38.25,38.25,38.25
                 h76.5L153,346.163l-19.125,95.625l95.625-19.125l114.75-114.75V480.038z M170.212,357.637l47.812,47.812l-59.288,11.476
                 L170.212,357.637z M233.325,392.063L183.6,342.337l214.2-214.2l49.726,49.725L233.325,392.063z M495.338,130.05l-32.513,32.512
-                L413.1,112.837l32.513-32.512c7.65-7.65,19.125-7.65,26.775,0l22.95,22.95C502.987,110.925,502.987,122.4,495.338,130.05z" />
+                L413.1,112.837l32.513-32.512c7.65-7.65,19.125-7.65,26.775,0l22.95,22.95C502.987,110.925,502.987,122.4,495.338,130.05z"/>
     </symbol>
 
     <symbol id="control-icon" viewBox="0 0 485.69 485.69">
         <path fill="#f24141" d="M410.428,34.738h-76.405l5.155,23.852c0.634,2.961,0.603,5.934,0.271,8.859h54.621V452.98H91.588V67.449h54.637
                         c-0.332-2.941-0.348-5.914,0.285-8.891l5.156-23.82H75.248c-9.031,0-16.34,7.324-16.34,16.354v418.243
                         c0,9.016,7.309,16.354,16.34,16.354h335.18c9.031,0,16.354-7.341,16.354-16.354V51.093
-                        C426.783,42.062,419.459,34.738,410.428,34.738z" />
+                        C426.783,42.062,419.459,34.738,410.428,34.738z"/>
         <path fill="#f24141" d="M355.568,152.949h-111.71c-9.047,0-16.355,7.324-16.355,16.34c0,9.035,7.309,16.355,16.355,16.355h111.71
-                        c9.047,0,16.354-7.32,16.354-16.355C371.924,160.273,364.615,152.949,355.568,152.949z" />
+                        c9.047,0,16.354-7.32,16.354-16.355C371.924,160.273,364.615,152.949,355.568,152.949z"/>
         <path fill="#f24141" d="M355.568,253.254h-111.71c-9.047,0-16.355,7.323-16.355,16.354c0,9.021,7.309,16.357,16.355,16.357h111.71
-                        c9.047,0,16.354-7.34,16.354-16.357C371.924,260.577,364.615,253.254,355.568,253.254z" />
+                        c9.047,0,16.354-7.34,16.354-16.357C371.924,260.577,364.615,253.254,355.568,253.254z"/>
         <path fill="#f24141" d="M119.556,156.792c-6.898,5.82-7.786,16.137-1.965,23.047l23.855,28.27c3.117,3.699,7.688,5.805,12.496,5.805
                         c0.398,0,0.792-0.016,1.203-0.047c5.219-0.379,9.949-3.258,12.703-7.719l42.914-69.477c4.746-7.688,2.375-17.75-5.312-22.492
-                        c-7.688-4.777-17.75-2.375-22.497,5.313l-31.066,50.273l-9.301-11.012C136.763,151.843,126.467,150.956,119.556,156.792z" />
+                        c-7.688-4.777-17.75-2.375-22.497,5.313l-31.066,50.273l-9.301-11.012C136.763,151.843,126.467,150.956,119.556,156.792z"/>
         <path fill="#f24141" d="M158.72,245.094c-13.554,0-24.535,10.978-24.535,24.517c0,13.543,10.98,24.52,24.535,24.52
-                        c13.543,0,24.52-10.977,24.52-24.52C183.24,256.07,172.263,245.094,158.72,245.094z" />
+                        c13.543,0,24.52-10.977,24.52-24.52C183.24,256.07,172.263,245.094,158.72,245.094z"/>
         <path fill="#f24141" d="M355.568,351.359h-111.71c-9.047,0-16.355,7.309-16.355,16.358c0,9.017,7.309,16.34,16.355,16.34h111.71
-                        c9.047,0,16.354-7.323,16.354-16.34C371.924,358.667,364.615,351.359,355.568,351.359z" />
+                        c9.047,0,16.354-7.323,16.354-16.34C371.924,358.667,364.615,351.359,355.568,351.359z"/>
         <path fill="#f24141" d="M158.72,343.199c-13.554,0-24.535,10.977-24.535,24.52c0,13.539,10.98,24.521,24.535,24.521
-                        c13.543,0,24.52-10.979,24.52-24.521C183.24,354.176,172.263,343.199,158.72,343.199z" />
+                        c13.543,0,24.52-10.979,24.52-24.521C183.24,354.176,172.263,343.199,158.72,343.199z"/>
         <path fill="#f24141" d="M173.463,75.613h138.73c3.401,0,6.613-1.521,8.746-4.176c2.137-2.629,2.961-6.105,2.229-9.43L311.686,8.859
                         C310.564,3.687,305.994,0,300.708,0H184.963c-5.281,0-9.852,3.688-10.977,8.859l-11.5,53.148
-                        c-0.695,3.324,0.125,6.801,2.247,9.43C166.868,74.093,170.08,75.613,173.463,75.613z" />
+                        c-0.695,3.324,0.125,6.801,2.247,9.43C166.868,74.093,170.08,75.613,173.463,75.613z"/>
     </symbol>
 
     <symbol id="clearance-icon" viewBox="0 0 512 512">
@@ -125,7 +129,8 @@
                 c0,12.892,6.445,20.258,18.877,20.258c12.431,0,18.877-7.367,18.877-20.258v-10.704H199.31v11.51c0,5.755-2.532,7.826-6.561,7.826
                 s-6.561-2.071-6.561-7.826v-43.51c0-5.755,2.532-7.942,6.561-7.942s6.561,2.187,6.561,7.942v8.633H211.281z"/>
         <rect fill="#f24141" x="245.004" y="251.838" width="23.021" height="11.51"/>
-        <path fill="#f24141" d="M325.001,217.309c-1.957,5.41-4.144,10.129-13.929,10.129v8.978h9.785v61.466h12.661v-80.573H325.001z"/>
+        <path fill="#f24141"
+              d="M325.001,217.309c-1.957,5.41-4.144,10.129-13.929,10.129v8.978h9.785v61.466h12.661v-80.573H325.001z"/>
         <path fill="#f24141" d="M365.862,286.371c-0.115-0.576-0.115-1.151-0.115-1.727c0-13.237,25.209-22.676,25.209-47.998
                 c0-12.892-6.446-20.258-18.877-20.258s-18.877,7.367-18.877,20.258v7.827h11.97v-8.633c0-5.755,2.532-7.942,6.562-7.942
                 c4.029,0,6.561,1.957,6.561,9.208c0,23.251-25.092,27.165-25.092,50.876v9.899h36.602v-11.51h-0.001H365.862z"/>
@@ -205,85 +210,87 @@
     </symbol>
 </svg>
 
-    <!-- App-header -->
-    <header id="app-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="header-row">
-                        <div class="header-row-item justify-content-start">
-                            <a href="#intro" class="logo scroll-link">
-                                <img src="<?php echo get_theme_file_uri('images/icon/logo/logo.png'); ?>" alt="Empire logo">
-                            </a>
-                        </div>
-                        <div class="header-row-item d-none d-lg-flex">
-                            <ul class="header-nav-menu d-flex justify-content-between align-items-center w-100">
-                                <li><a href="#comparison" class="scroll-link">Сравнить цены</a></li>
-                                <li><a href="#advantages" class="scroll-link"><?= get_the_title(165); ?></a></li>
-                                <li><a href="#contacts" class="scroll-link"><?= get_field('contact_head_title', 90); ?></a></li>
-                            </ul>
-                        </div>
-                        <div class="header-row-item  d-none d-sm-flex">
-                            <ul class="phone-list">
-                                <li>
-                                    <a href="tel: <?= get_theme_mod('phone'); ?>">
-                                        <svg width="20" height="20">
-                                            <use xlink:href="#phone-icon"></use>
-                                        </svg>
-                                        <?= get_theme_mod('phone'); ?>
-                                    </a>
-                                    <div class="small">по Украине бесплатно</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header-row-item  d-none d-sm-flex">
-                            <a href="#comparison" class="btn btn-primary scroll-link">
-                                Подобрать авто
-                            </a>
-                        </div>
-                        <div class="header-row-item justify-content-center">
-                            <div class="burger-menu d-flex flex-column justify-content-center align-items-start">
-                                <div class="line line--top"></div>
-                                <div class="line line--middle d-flex justify-content-between align-items-start">
-                                    <div class="line line--small"></div>
-                                    <div class="line line--big"></div>
-                                </div>
-                                <div class="line line--bottom"></div>
-                            </div>
-                        </div>
+<!-- App-header -->
+<header id="app-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-row">
+                    <div class="header-row-item justify-content-start">
+                        <a href="#intro" class="logo scroll-link">
+                            <img src="<?= get_theme_file_uri('images/icon/logo/logo.png'); ?>" alt="Empire logo">
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="menu">
-        <div class="menu-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-5 pr-sm-0">
-                        <ul class="menu-nav">
-                            <li><a href="#pain" class="scroll-link"><?= get_the_title(74); ?></a></li>
-                            <li><a href="#comparison" class="scroll-link"><?= get_the_title(80); ?></a></li>
-                            <li><a href="#sale" class="scroll-link"><?= get_the_title(82); ?></a></li>
-                            <li><a href="#reviews" class="scroll-link"><?= get_the_title(136); ?></a></li>
-                            <li><a href="#saving" class="scroll-link"><?= get_the_title(84); ?></a></li>
-                            <li><a href="#stages" class="scroll-link"><?= get_the_title(130); ?></a></li>
-                            <li><a href="#teams" class="scroll-link"><?= get_the_title(119); ?></a></li>
-                            <li><a href="#contacts" class="scroll-link"><?= get_the_title(90); ?></a></li>
+                    <div class="header-row-item d-none d-lg-flex">
+                        <ul class="header-nav-menu d-flex justify-content-between align-items-center w-100">
+                            <li><a href="#comparison" class="scroll-link"><?= get_field('comparison_header_title',
+                                        80); ?></a></li>
+                            <li><a href="#advantages" class="scroll-link"><?= get_the_title(165); ?></a></li>
+                            <li><a href="#contacts" class="scroll-link"><?= get_field('contact_head_title', 90); ?></a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-lg-3 p-lg-0 ml-auto mr-0 d-none d-sm-block">
-                        <h3 class="section-title text-white mb-4">
-                            Доверьтесь профессионалам
-                        </h3>
-
-						<?php require_once('template-parts/modules/form.php'); ?>
+                    <div class="header-row-item  d-none d-sm-flex">
+                        <ul class="phone-list">
+                            <li>
+                                <a href="tel: <?= get_theme_mod('phone'); ?>">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#phone-icon"></use>
+                                    </svg>
+                                    <?= get_theme_mod('phone'); ?>
+                                </a>
+                                <div class="small">по Украине бесплатно</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-row-item  d-none d-sm-flex">
+                        <a href="#comparison" class="btn btn-primary scroll-link">
+                            Подобрать авто
+                        </a>
+                    </div>
+                    <div class="header-row-item justify-content-center">
+                        <div class="burger-menu d-flex flex-column justify-content-center align-items-start">
+                            <div class="line line--top"></div>
+                            <div class="line line--middle d-flex justify-content-between align-items-start">
+                                <div class="line line--small"></div>
+                                <div class="line line--big"></div>
+                            </div>
+                            <div class="line line--bottom"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</header>
 
-    <!-- Main -->
-    <main>
+<div class="menu">
+    <div class="menu-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-5 pr-sm-0">
+                    <ul class="menu-nav">
+                        <li><a href="#pain" class="scroll-link"><?= get_the_title(74); ?></a></li>
+                        <li><a href="#comparison" class="scroll-link"><?= get_the_title(80); ?></a></li>
+                        <li><a href="#sale" class="scroll-link"><?= get_the_title(82); ?></a></li>
+                        <li><a href="#reviews" class="scroll-link"><?= get_the_title(136); ?></a></li>
+                        <li><a href="#saving" class="scroll-link"><?= get_the_title(84); ?></a></li>
+                        <li><a href="#stages" class="scroll-link"><?= get_the_title(130); ?></a></li>
+                        <li><a href="#teams" class="scroll-link"><?= get_the_title(119); ?></a></li>
+                        <li><a href="#contacts" class="scroll-link"><?= get_the_title(90); ?></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-lg-3 p-lg-0 ml-auto mr-0 d-none d-sm-block">
+                    <h3 class="section-title text-white mb-4">
+                        <?= get_field('main_burger_title', 92); ?>
+                    </h3>
+
+                    <?php require('template-parts/modules/form.php'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main -->
+<main>

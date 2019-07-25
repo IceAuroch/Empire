@@ -14,7 +14,7 @@
                         <?= get_the_title(92); ?>
                     </h1>
                     <div class="intro-item__subtitle">
-                       <?= get_field('main_subtitle', 92); ?>
+                        <?= get_field('main_subtitle', 92); ?>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                     <div class="intro-order__description text-white mb-4">
                         <?= get_field('main_description', 92); ?>
                     </div>
-					<?php require('modules/form.php'); ?>
+                    <?php require('modules/form.php'); ?>
                 </div>
             </div>
         </div>

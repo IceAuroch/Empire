@@ -418,6 +418,11 @@ window.jQuery = window.$ = jquery;
    */
   var element = document.getElementById('map');
 
+  let lat  = $("[name='Lat']").val();
+  let long  = $("[name='Long']").val();
+  let lat2  = $("[name='Lat2']").val();
+  let long2  = $("[name='Long2']").val();
+
   var map = L.map(element);
 
   var logoIcon = L.icon({
@@ -432,8 +437,19 @@ window.jQuery = window.$ = jquery;
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  var target = L.latLng('50.4183', '30.47579');
-  var targetSecond = L.latLng('50.4877485', '30.5098113');
+  if(lat && long) {
+    var target = L.latLng(lat, long);
+  } else {
+    var target = L.latLng('50.4183', '30.47579');
+  }
+
+  if(lat2 && long2) {
+    var targetSecond = L.latLng(lat2, long2);
+  } else {
+    var targetSecond = L.latLng('50.4877485', '30.5098113');
+  }
+
+
 
   map.setView(target, 14);
 

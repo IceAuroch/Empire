@@ -7,7 +7,7 @@
                     <h2 class="section-title text-white mb-4">
                         <?= get_the_title(88); ?>
                     </h2>
-					<?php require('modules/form.php'); ?>
+                    <?php require('modules/form.php'); ?>
                 </div>
             </div>
         </div>
