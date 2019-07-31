@@ -81,8 +81,43 @@
     position: relative;
     padding-bottom: 10px;
 
+    .video-about {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: -15px;
+        cursor: pointer;
+        transition: .5s;
+        animation: toggleOpacity 1.5s ease-out infinite;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            top: -80px;
+        }
+
+        svg {
+            fill: $light;
+
+            path {
+                box-shadow: 0px 2px 35px 8px rgba(255, 255, 255, 0.2);
+
+            }
+        }
+    }
+
     &__description {
         font-style: italic;
         font-size: 16px;
+    }
+}
+
+@keyframes toggleOpacity {
+    0% {
+        opacity: .6;
+    }
+    50% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
     }
 }

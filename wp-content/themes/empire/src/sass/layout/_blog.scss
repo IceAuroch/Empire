@@ -1,0 +1,42 @@
+#blog {
+  padding: 70px 0;
+
+
+  .section-description {
+
+    &::before {
+      content: '';
+      @extend %pos;
+      top: 30px;
+      left: -20px;
+      bottom: -50px;
+      background: rgba(#f8c7c7,.8);
+      z-index: -5;
+    }
+  }
+
+  .blog-item {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    padding-bottom: 56.25%;
+    cursor: pointer;
+    @extend %img;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: $light;
+      transition: .5s;
+    }
+
+    &:hover {
+
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+}

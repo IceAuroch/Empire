@@ -35,12 +35,11 @@
         &::before {
             content: '';
             position: absolute;
-            top: 3px;
+            top: 7px;
             left: 0;
             width: 15px;
-            height: 20px;
+            height: 15px;
             background: $dark;
-            transform: skew(-20deg);
         }
     }
 

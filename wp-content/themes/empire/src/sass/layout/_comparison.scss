@@ -93,7 +93,6 @@
                 left: -20px;
                 right: -50px;
                 background: #fff;
-                transform: skew(-20deg);
                 z-index: -4;
             }
         }
@@ -178,7 +177,7 @@
         right: -50%;
         opacity: 0;
         pointer-events: none;
-        bottom: -5px;
+        bottom: 2px;
         padding: 15px 60px;
         color: $dark;
         font-size: 24px;
@@ -197,7 +196,6 @@
             content: '';
             @extend %pos;
             background: $primary;
-            transform: skew(-20deg);
             z-index: -5;
         }
 
@@ -235,7 +233,7 @@
         }
 
         .comparison-card__btn {
-            right: 10px;
+            right: 13px;
             opacity: 1;
             pointer-events: all;
         }

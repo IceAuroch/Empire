@@ -77,12 +77,11 @@
         &::before {
             content: '';
             position: absolute;
-            top: -10px;
+            top: 0;
             left: 35px;
             bottom: 0;
             width: 90px;
             background: $primary;
-            transform: skew(-20deg);
             z-index: -4;
         }
     }

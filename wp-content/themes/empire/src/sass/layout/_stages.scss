@@ -30,10 +30,10 @@
     transition: .5s;
     cursor: pointer;
 
-    &.active {
-        background: #fff;
-        box-shadow: 0px -10px 14px -4px rgba(0, 0, 0, 0.26);
-    }
+    //&.active {
+    //    background: #fff;
+    //    box-shadow: 0px -10px 14px -4px rgba(0, 0, 0, 0.26);
+    //}
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
         padding-top: 0;
@@ -79,18 +79,18 @@
         }
     }
 
-    &:hover {
-        background: #fff;
-        box-shadow: 0px -10px 14px -4px rgba(0, 0, 0, 0.26);
-
-        .stages-card-description {
-
-            &::before {
-                content: '';
-                background: #fff;
-            }
-        }
-    }
+    //&:hover {
+    //    background: #fff;
+    //    box-shadow: 0px -10px 14px -4px rgba(0, 0, 0, 0.26);
+    //
+    //    .stages-card-description {
+    //
+    //        &::before {
+    //            content: '';
+    //            background: #fff;
+    //        }
+    //    }
+    //}
 }
 
 .stages-tabs-img {

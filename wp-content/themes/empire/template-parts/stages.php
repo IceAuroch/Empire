@@ -13,14 +13,11 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-10 col-lg-7 mx-auto mx-lg-0">
-
-                <?php if (have_rows('stage_items', 130)): ?>
-
-                    <div class="stages-column">
-
-                        <?php while (have_rows('stage_items', 130)): the_row(); ?>
+        <?php if (have_rows('stage_items', 130)): ?>
+            <div class="row">
+                <?php while (have_rows('stage_items', 130)): the_row(); ?>
+                    <div class="col-sm-6">
+                        <div class="stages-column">
 
                             <div class="stages-card">
                                 <div class="stages-card-secondary">
@@ -36,32 +33,10 @@
                                 </div>
                             </div>
 
-                        <?php endwhile; ?>
-
+                        </div>
                     </div>
-
-                <?php endif; ?>
-
+                <?php endwhile; ?>
             </div>
-            <div class="col-sm-6 col-lg-5 mx-auto mx-lg-0">
-
-                <?php if (have_rows('stage_items', 130)): ?>
-
-                    <div class="stages-tabs-img d-none d-lg-block">
-
-                        <?php while (have_rows('stage_items', 130)): the_row(); ?>
-
-                            <div class="stages-tabs-img__item" style="background-image:
-                                    url(<?= get_sub_field('stage_item_image')['url']; ?>)">
-                            </div>
-
-                        <?php endwhile; ?>
-
-                    </div>
-
-                <?php endif; ?>
-
-            </div>
-        </div>
+        <?php endif; ?>
     </div>
 </section>

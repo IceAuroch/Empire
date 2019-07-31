@@ -9,6 +9,7 @@ $sections = [
     'comparison',
     'sale',
     'reviews',
+    'blog',
     'saving',
     'stages',
     'order',

@@ -36,7 +36,7 @@ function theme_scripts()
     wp_deregister_script('wp-embed');
     wp_deregister_script('jquery');
     wp_deregister_script('jquery-migrate');
-    wp_enqueue_script('lib','https://unpkg.com/leaflet@1.0.1/dist/leaflet.js', null, '', true);
+    wp_enqueue_script('lib', 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.js', null, '', true);
     wp_enqueue_script('app', get_theme_file_uri('dist/app.js'), null, '', true);
 }
 
@@ -69,12 +69,12 @@ function generateRandomString($length = 10)
 
 // Contact list
 
-    function theme_customize_register($wp_customize)
-    {
-        $wp_customize->add_section('contacts', [
-            'title' => 'Контакты',
-            'priority' => 30,
-        ]);
+function theme_customize_register($wp_customize)
+{
+    $wp_customize->add_section('contacts', [
+        'title' => 'Контакты',
+        'priority' => 30,
+    ]);
 //        $wp_customize->add_setting('facebook');
 //        $wp_customize->add_control('facebook', [
 //            'section' => 'contacts',
@@ -94,70 +94,70 @@ function generateRandomString($length = 10)
 //            'type' => 'text',
 //        ]);
 
-        $wp_customize->add_setting('email');
-        $wp_customize->add_control('email', [
-            'section' => 'contacts',
-            'label' => 'E-mail',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address');
-        $wp_customize->add_control('address', [
-            'section' => 'contacts',
-            'label' => 'Адресс',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address_link');
-        $wp_customize->add_control('address_link', [
-            'section' => 'contacts',
-            'label' => 'Адресс ссылка',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address_long');
-        $wp_customize->add_control('address_long', [
-            'section' => 'contacts',
-            'label' => 'Долгота',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address_lat');
-        $wp_customize->add_control('address_lat', [
-            'section' => 'contacts',
-            'label' => 'Широта',
-            'type' => 'text',
-        ]);
+    $wp_customize->add_setting('email');
+    $wp_customize->add_control('email', [
+        'section' => 'contacts',
+        'label' => 'E-mail',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address');
+    $wp_customize->add_control('address', [
+        'section' => 'contacts',
+        'label' => 'Адресс',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address_link');
+    $wp_customize->add_control('address_link', [
+        'section' => 'contacts',
+        'label' => 'Адресс ссылка',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address_long');
+    $wp_customize->add_control('address_long', [
+        'section' => 'contacts',
+        'label' => 'Долгота',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address_lat');
+    $wp_customize->add_control('address_lat', [
+        'section' => 'contacts',
+        'label' => 'Широта',
+        'type' => 'text',
+    ]);
 
-        $wp_customize->add_setting('address2');
-        $wp_customize->add_control('address2', [
-            'section' => 'contacts',
-            'label' => 'Адресс 2',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address_link2');
-        $wp_customize->add_control('address_link2', [
-            'section' => 'contacts',
-            'label' => 'Адресс ссылка 2',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address_long2');
-        $wp_customize->add_control('address_long2', [
-            'section' => 'contacts',
-            'label' => 'Долгота2',
-            'type' => 'text',
-        ]);
-        $wp_customize->add_setting('address_lat2');
-        $wp_customize->add_control('address_lat2', [
-            'section' => 'contacts',
-            'label' => 'Широта2',
-            'type' => 'text',
-        ]);
+    $wp_customize->add_setting('address2');
+    $wp_customize->add_control('address2', [
+        'section' => 'contacts',
+        'label' => 'Адресс 2',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address_link2');
+    $wp_customize->add_control('address_link2', [
+        'section' => 'contacts',
+        'label' => 'Адресс ссылка 2',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address_long2');
+    $wp_customize->add_control('address_long2', [
+        'section' => 'contacts',
+        'label' => 'Долгота2',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('address_lat2');
+    $wp_customize->add_control('address_lat2', [
+        'section' => 'contacts',
+        'label' => 'Широта2',
+        'type' => 'text',
+    ]);
 
 
-        $wp_customize->add_setting('phone');
-        $wp_customize->add_control('phone', [
-            'section' => 'contacts',
-            'label' => 'Телефон',
-            'type' => 'text',
-        ]);
-    }
+    $wp_customize->add_setting('phone');
+    $wp_customize->add_control('phone', [
+        'section' => 'contacts',
+        'label' => 'Телефон',
+        'type' => 'text',
+    ]);
+}
 
 add_action('customize_register', 'theme_customize_register');
 
@@ -170,4 +170,26 @@ function dd($args)
     echo '</pre>';
 
     die();
+}
+
+// Video attr
+function get_video_id($url)
+{
+    if (!$url) {
+        return null;
+    }
+
+    preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/",
+        $url, $matches);
+    return $matches[1];
+}
+
+function getVideoImageLinkAttribute($url)
+{
+    return 'https://img.youtube.com/vi/' . get_video_id($url) . '/maxresdefault.jpg';
+}
+
+function getVideoLinkAttribute($url)
+{
+    return 'https://www.youtube.com/embed/' . get_video_id($url);
 }

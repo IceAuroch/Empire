@@ -19,7 +19,7 @@
                             <div class="advantages-item__description">
                                 <?= get_sub_field('advantages_item'); ?>
                             </div>
-                            <div class="decor-animate"></div>
+<!--                            <div class="decor-animate"></div>-->
                         </div>
                     <?php endwhile; ?>
                 </div>

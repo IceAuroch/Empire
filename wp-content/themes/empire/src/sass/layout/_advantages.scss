@@ -26,11 +26,11 @@
     }
 
     &.active {
-        
-        .decor-animate {
-            transform: translateY(-50%) translateX(0);
-            opacity: 0;
-        }
+
+        //.decor-animate {
+        //    transform: translateY(-50%) translateX(0);
+        //    opacity: 0;
+        //}
 
         .advantages-item__count {
 
@@ -40,16 +40,16 @@
         }
     }
 
-    .decor-animate {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) translateX(100vh);
-        width: 450px;
-        height: 85px;
-        background: url('../images/icon/decor/wheel.png') 50% 50% /cover no-repeat;
-        z-index: 2;
-        transition: transform .7s linear, opacity 1.4s linear;
-    }
+    //.decor-animate {
+    //    position: absolute;
+    //    top: 50%;
+    //    transform: translateY(-50%) translateX(100vh);
+    //    width: 450px;
+    //    height: 85px;
+    //    background: url('../images/icon/decor/wheel.png') 50% 50% /cover no-repeat;
+    //    z-index: 2;
+    //    transition: transform .7s linear, opacity 1.4s linear;
+    //}
 
     &__count {
         @extend %pos;

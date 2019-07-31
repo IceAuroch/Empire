@@ -1,3 +1,6 @@
+<?php
+$about_video = get_field('about_video', 92);
+?>
 <!-- Intro -->
 <section id="intro">
     <div class="parallax">
@@ -20,6 +23,13 @@
             </div>
             <div class="col-sm-5 col-xl-4 d-flex align-items-end">
                 <div class="intro-order">
+                    <?php if (!is_null($about_video)) : ?>
+                        <div class="video-about" data-src="<?= getVideoLinkAttribute($about_video); ?>">
+                            <svg width="100" height="50">
+                                <use xlink:href="#play-icon"></use>
+                            </svg>
+                        </div>
+                    <?php endif; ?>
                     <h3 class="intro-order__title text-primary text-uppercase">
                         Оставить заявку
                     </h3>
