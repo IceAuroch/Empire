@@ -150,11 +150,17 @@ function theme_customize_register($wp_customize)
         'type' => 'text',
     ]);
 
-
     $wp_customize->add_setting('phone');
     $wp_customize->add_control('phone', [
         'section' => 'contacts',
         'label' => 'Телефон',
+        'type' => 'text',
+    ]);
+
+    $wp_customize->add_setting('phone2');
+    $wp_customize->add_control('phone2', [
+        'section' => 'contacts',
+        'label' => 'Телефон 2',
         'type' => 'text',
     ]);
 }

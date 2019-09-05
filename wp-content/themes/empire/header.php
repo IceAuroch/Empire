@@ -255,6 +255,12 @@
                                     </svg>
                                     <?= get_theme_mod('phone'); ?>
                                 </a>
+                                <a href="tel: <?= get_theme_mod('phone2'); ?>">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#phone-icon"></use>
+                                    </svg>
+                                    <?= get_theme_mod('phone2'); ?>
+                                </a>
                                 <div class="small">по Украине бесплатно</div>
                             </li>
                         </ul>
