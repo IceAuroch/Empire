@@ -163,6 +163,13 @@ function theme_customize_register($wp_customize)
         'label' => 'Телефон 2',
         'type' => 'text',
     ]);
+
+    $wp_customize->add_setting('phone3');
+    $wp_customize->add_control('phone3', [
+        'section' => 'contacts',
+        'label' => 'Телефон 3',
+        'type' => 'text',
+    ]);
 }
 
 add_action('customize_register', 'theme_customize_register');

@@ -38,10 +38,9 @@
                             </a>
                         </li>
                         <li class="contacts-list-item contacts-list-item--phone">
-                            <a href="tel: <?= get_theme_mod('phone2'); ?>">
-                                <?= get_theme_mod('phone2'); ?>
+                            <a href="tel: <?= get_theme_mod('phone3'); ?>">
+                                <?= get_theme_mod('phone3'); ?>
                             </a>
-                            <div class="small text-white">звонки по Украине бесплатно</div>
                         </li>
                     </ul>
                 </div>

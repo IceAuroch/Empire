@@ -3,7 +3,7 @@
     <input type="hidden" name="admin_email" value="<?= get_option('admin_email'); ?>">
     <div class="form-column">
         <div class="form-group">
-            <label for="user-name--<?= $name = generateRandomString() ?>" class="label-placeholder">Введите ваше
+            <label for="user-name--<?= $name = generateRandomString() ?>" class="label-placeholder">Введите Ваше
                 имя</label>
             <input type="text" name="name" class="form-control" id="user-name--<?= $name ?>" required>
         </div>

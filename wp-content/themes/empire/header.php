@@ -261,7 +261,6 @@
                                     </svg>
                                     <?= get_theme_mod('phone2'); ?>
                                 </a>
-                                <div class="small">по Украине бесплатно</div>
                             </li>
                         </ul>
                     </div>
