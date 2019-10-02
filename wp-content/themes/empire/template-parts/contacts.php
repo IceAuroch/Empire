@@ -38,8 +38,8 @@
                             </a>
                         </li>
                         <li class="contacts-list-item contacts-list-item--phone">
-                            <a href="tel: <?= get_theme_mod('phone3'); ?>">
-                                <?= get_theme_mod('phone3'); ?>
+                            <a href="tel: <?= get_theme_mod('phone2'); ?>">
+                                <?= get_theme_mod('phone2'); ?>
                             </a>
                         </li>
                     </ul>
