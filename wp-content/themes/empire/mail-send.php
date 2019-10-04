@@ -3,7 +3,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
 	$name = $_POST['name'];
 	$phone = $_POST['phone'];
 	$car = isset($_POST['car']) ? $_POST['car'] : 'Форма без машины';
-	$to = $_POST['admin_email'];
+	$to = 'imperiumauto.com.ua@gmail.com';
 	$subject = isset($_POST['subject']) ? $_POST['subject'] : 'Форма заявки с лендинга Empire';
 	$message = "
     <html>
@@ -19,7 +19,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         </html>
     ";
 	$headers = 'From: info@acrnm.pro' . "\r\n" .
-			   'Reply-To: admin@app.com ' .  "\r\n" .
+			   'Reply-To: imperiumauto.com.ua@gmail.com ' .  "\r\n" .
 			   'X-Mailer: PHP/' . phpversion();
 	$headers = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
