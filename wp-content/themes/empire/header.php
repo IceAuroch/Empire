@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
 
-
     <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
           rel="stylesheet">
-
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
@@ -24,6 +22,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149305361-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-149305361-1');
+    </script>
 
 
     <!-- Facebook Pixel Code -->
@@ -242,8 +248,7 @@
                             <li><a href="#comparison" class="scroll-link"><?= get_field('comparison_header_title',
                                         80); ?></a></li>
                             <li><a href="#advantages" class="scroll-link"><?= get_the_title(165); ?></a></li>
-                            <li><a href="#contacts" class="scroll-link"><?= get_field('contact_head_title', 90); ?></a>
-                            </li>
+                            <li><a href="<?= get_permalink(330)?>"><?= get_the_title(330) ?></a></li>
                         </ul>
                     </div>
                     <div class="header-row-item  d-none d-sm-flex">

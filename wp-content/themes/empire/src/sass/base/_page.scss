@@ -1,0 +1,62 @@
+.page {
+  z-index: 5;
+
+  &-secondary {
+    padding: 190px 0 120px;
+    background: $dark;
+    margin-bottom: -35px;
+
+    .page-banner {
+      @extend %img;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      z-index: -4;
+
+      &::before {
+        content: '';
+        @extend %pos;
+        background: rgba($dark, .7);
+      }
+
+      &:after {
+        content: '';
+        @extend %pos;
+        background-image: linear-gradient(to top, #19212e 0%, rgba(25, 33, 46, 0) 100%);
+      }
+    }
+  }
+}
+
+#comparison-page {
+
+  .section-description {
+    margin-bottom: 40px;
+
+    &__title {
+      color: #fff;
+      padding-bottom: 25px;
+
+
+      &::before {
+        content: '';
+        @extend %pos;
+        top: auto;
+        width: 60px;
+        height: 4px;
+        background: $primary;
+        transform: skew(-20deg);
+      }
+    }
+  }
+
+  .comparison-card {
+    border: none;
+
+    &-bottom {
+      border: none;
+    }
+  }
+}

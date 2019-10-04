@@ -41,7 +41,7 @@ $car = [
 ];
 ?>
 
-<div class="comparison-card">
+<a href="<?= get_the_permalink()?>" class="comparison-card">
     <div class="comparison-card-top">
         <div class="img" style="background-image:
                 url(<?php echo get_the_post_thumbnail_url($post->id, 'large'); ?>)"></div>
@@ -75,6 +75,6 @@ $car = [
             </div>
         </div>
     </div>
-    <a href="#" class="btn comparison-card__btn open-modal-car" data-car='<?= json_encode($car) ?>'>Хочу это
-        авто</a>
-</div>
+    <div class="btn comparison-card__btn open-modal-car" data-car='<?= json_encode($car) ?>'>Хочу это
+        авто</div>
+</a>

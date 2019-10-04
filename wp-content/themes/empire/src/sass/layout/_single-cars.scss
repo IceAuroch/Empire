@@ -1,0 +1,219 @@
+#car-single {
+
+  .slider-arrow {
+
+    &-item {
+
+      svg {
+        opacity: 1;
+      }
+
+      &:hover {
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+  }
+
+  .car-information {
+    margin-top: 25px;
+    color: #fff;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-bottom: 15px;
+
+      li {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 40px;
+        font-size: 16px;
+        word-break: break-word;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 0;
+          width: 15px;
+          height: 15px;
+          background: #a8b7cf;
+        }
+      }
+    }
+
+  }
+
+  .car-image {
+    @extend %img;
+    padding-bottom: 56.25%;
+  }
+
+  .row-car-description {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(#fff, .15);
+  }
+
+  .car-video {
+    @extend %img;
+    padding-bottom: 56.25%;
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .section-description {
+    margin-bottom: 40px;
+
+    &__title {
+      color: #fff;
+      font-size: $h2-font-size;
+      padding-bottom: 25px;
+
+
+      &::before {
+        content: '';
+        @extend %pos;
+        top: auto;
+        width: 60px;
+        height: 4px;
+        background: $primary;
+        transform: skew(-20deg);
+      }
+    }
+  }
+
+  .car-description {
+    margin-top: 40px;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      margin-top: 0;
+    }
+
+    &-header {
+
+      .title {
+        padding: 10px 15px;
+        background: #fff;
+        color: #19212e;
+        margin-bottom: -20px;
+        margin-left: -15px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          padding: 15px 25px;
+        }
+      }
+
+      .car-in-stock {
+        padding: 8px 16px;
+        color: #fff;
+        background: #44b759;
+        font-size: .875rem;
+        font-family: $headings-font-family;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          padding: 8px 20px;
+        }
+      }
+    }
+
+    &-body {
+      background-color: #131923;
+      padding: 40px 20px 30px;
+
+      &-row {
+
+        &:first-of-type {
+          padding: 30px 0;
+          margin-bottom: 30px;
+          border-bottom: 1px solid rgba(#fff, 0.15);
+        }
+
+        .price {
+          color: #959daa;
+          font-size: 1.125rem;
+
+          strong {
+            color: #fff;
+          }
+        }
+
+        .table {
+
+          tr {
+            color: #959daa;
+
+            &.table-car-info {
+
+              td {
+                padding-left: 15px;
+
+                @media (min-width: map_get($grid-breakpoints, sm)) {
+                  padding-left: 30px;
+                }
+              }
+            }
+          }
+
+          td {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            vertical-align: bottom !important;
+            width: 100%;
+
+            strong {
+              color: #fff;
+            }
+
+            &:nth-child(2) {
+              white-space: nowrap;
+              font-size: 1rem;
+              text-align: right;
+            }
+          }
+
+          .total {
+            padding-top: 5px;
+            border-top: 1px solid rgba(#fff, 0.15);
+          }
+        }
+      }
+    }
+  }
+
+
+  .car-single-slider {
+    margin-bottom: 10px;
+
+    &-item {
+      width: 100%;
+      margin-bottom: 0;
+      padding-bottom: 56.25%;
+      @extend %img;
+    }
+  }
+
+  .car-single-slider-navfor {
+    margin: 0 -5px;
+
+    &-item {
+      width: 25%;
+      padding: 0 5px;
+
+      figure {
+        @extend %img;
+        padding-bottom: 56.25%;
+      }
+    }
+  }
+}

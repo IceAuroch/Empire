@@ -23,6 +23,18 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149305361-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149305361-1');
+    </script>
 
 
     <!-- Facebook Pixel Code -->
@@ -58,6 +70,11 @@
 	        	c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0l12.537,12.533c0.094,0.094,0.146,0.221,0.146,0.354
 	        	s-0.053,0.26-0.146,0.354L19.951,29.206C19.854,29.304,19.726,29.353,19.598,29.353z"/>
     </symbol>
+
+    <symbol id="youtube-icon" viewBox="0 0 40 29">
+                <image width="40" height="29"
+                       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAdCAYAAADYSS5zAAAB0UlEQVRYR82YPUscURSGn5O9o4UWi+7uiBoIKoJVmkDSCFZGCGhv5xaCEIPGYkUW3DKWSZnC/Ac7/Qf5CwExhRa6RISkCNnRI3dwJ0YI7szcC3O7gfO+52FmOB9XeHB0nCH+mDqwCEwDNUAexjl6VuAC+AYc0BftyymX973/SaxhsIrqHlB2BJDW5gqRhpx3PneFCaCG5gNKI62jl3hhT86jbesdA2o1WEF030uyrKYqdWl3vohWGUTMd2A4q5cn3Q80eiZaDdYR/eQpST5blXeiNXMIzOdz8qY+soCnwJi3FPmMzyxgBzDpffQEld8IM+m1PSsiC2iLZfqjfKQdvadWWgZaIJPpTR5X5AKUdrQRlyn7BcKgzg1NRJ8+nrb3CCeA3XQ6RT8/gzVUbZENe8f4f6RTwATU1lbMWyTuTLnaphfABLRMmT6zCWwBA1neqFfABHSUClHpK8hEWkjvgFoJXvBEm8BSWjgb7w1Qw+AVqi3gdRawrsY5oI6YOa7ZRZjLA+YcUKtmAWEHmHUB5gSQdrRJWHqDiv3HXroEuw+YtRcfg/wCnvsAu/OMe3Hhp5mCz4OFn6iLvpPE41KRt7qkXxZ5L/4LWeCbhQSyYHcztx7WzDjbNGKlAAAAAElFTkSuQmCC"/>
+    </symbol>
 </svg>
 
 
@@ -77,8 +94,7 @@
                             <li><a href="<?= site_url(); ?>#comparison"><?= get_field('comparison_header_title',
                                         80); ?></a></li>
                             <li><a href="<?= site_url(); ?>#advantages"><?= get_the_title(165); ?></a></li>
-                            <li><a href="<?= site_url(); ?>#contacts"><?= get_field('contact_head_title', 90); ?></a>
-                            </li>
+                            <li><a href="<?= get_permalink(330) ?>"><?= get_the_title(330) ?></a></li>
                         </ul>
                     </div>
                     <div class="header-row-item  d-none d-sm-flex">
@@ -90,9 +106,25 @@
                                     </svg>
                                     <?= get_theme_mod('phone'); ?>
                                 </a>
-                                <div class="small">по Украине бесплатно</div>
+                                <a href="tel: <?= get_theme_mod('phone2'); ?>">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#phone-icon"></use>
+                                    </svg>
+                                    <?= get_theme_mod('phone2'); ?>
+                                </a>
                             </li>
                         </ul>
+<!--                        <ul class="phone-list">-->
+<!--                            <li>-->
+<!--                                <a href="tel: --><?//= get_theme_mod('phone'); ?><!--">-->
+<!--                                    <svg width="20" height="20">-->
+<!--                                        <use xlink:href="#phone-icon"></use>-->
+<!--                                    </svg>-->
+<!--                                    --><?//= get_theme_mod('phone'); ?>
+<!--                                </a>-->
+<!--                                <div class="small">по Украине бесплатно</div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
                     </div>
                     <div class="header-row-item  d-none d-sm-flex">
                         <a href="<?= site_url(); ?>#comparison" class="btn btn-primary ">
@@ -128,7 +160,7 @@
                         <li><a href="<?= site_url(); ?>#saving"><?= get_the_title(84); ?></a></li>
                         <li><a href="<?= site_url(); ?>#stages"><?= get_the_title(130); ?></a></li>
                         <li><a href="<?= site_url(); ?>#teams"><?= get_the_title(119); ?></a></li>
-                        <li><a href="<?= site_url(); ?>#contacts"<?= get_the_title(90); ?></a></li>
+                        <li><a href="<?= site_url(); ?>#contacts"><?= get_the_title(90); ?></a></li>
                     </ul>
                 </div>
             </div>

@@ -1,222 +1,235 @@
 .custom-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    padding: 60px 40px 40px;
-    transform: translate(-50%, 200%);
-    width: 100%;
-    max-width: 400px;
-    background: $dark;
-    z-index: 800;
-    transition: .5s;
-    max-height: 100%;
-    overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 60px 40px 40px;
+  transform: translate(-50%, 200%);
+  width: 100%;
+  max-width: 400px;
+  background: $dark;
+  z-index: 800;
+  transition: .5s;
+  max-height: 100%;
+  overflow-y: auto;
 
-    &.active {
-        transform: translate(-50%, -50%);
+  &.active {
+    transform: translate(-50%, -50%);
+  }
+
+  &--buy-car,
+  &--test-drive {
+    padding: 50px 40px 35px;
+  }
+
+  &--team {
+    padding: 0;
+    display: flex;
+    max-width: 585px;
+    max-height: 90vh;
+    background: #fff;
+    transform: translate(-50%, 600%);
+    min-height: 350px;
+
+    .img {
+      width: 30%;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 40%;
+      }
     }
 
-    &--team {
-        padding: 0;
-        display: flex;
-        max-width: 585px;
-        max-height: 90vh;
+    .content {
+      width: 70%;
+      padding-bottom: 20px;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 60%;
+        padding-bottom: 50px;
+      }
+
+      .name {
+        position: relative;
+        border-top: 1px solid #e1e1e1;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: bold;
         background: #fff;
-        transform: translate(-50%, 600%);
-        min-height: 350px;
+        z-index: 4;
 
-        .img {
-            width: 30%;
-
-            @media (min-width: map_get($grid-breakpoints, sm)) {
-                width: 40%;
-            }
+        &::before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          left: 35px;
+          bottom: 0;
+          width: 90px;
+          background: $primary;
+          z-index: -4;
         }
+      }
 
-        .content {
-            width: 70%;
-            padding-bottom: 20px;
+      .position {
+        margin: 15px 0;
+        padding: 15px 20px;
+        font-size: 14px;
+        font-style: italic;
+        color: #6a7688;
+        background: #f1f4f7;
 
-            @media (min-width: map_get($grid-breakpoints, sm)) {
-                width: 60%;
-                padding-bottom: 50px;
-            }
-
-            .name {
-                position: relative;
-                border-top: 1px solid #e1e1e1;
-                padding: 20px;
-                font-size: 16px;
-                font-weight: bold;
-                background: #fff;
-                z-index: 4;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: -10px;
-                    left: 35px;
-                    bottom: 0;
-                    width: 90px;
-                    background: $primary;
-                    z-index: -4;
-                }
-            }
-
-            .position {
-                margin: 15px 0;
-                padding: 15px 20px;
-                font-size: 14px;
-                font-style: italic;
-                color: #6a7688;
-                background: #f1f4f7;
-
-                @media (min-width: map_get($grid-breakpoints, sm)) {
-                    font-size: 16px;
-                }
-            }
-
-            .description {
-                padding: 0 20px;
-                margin-bottom: 0;
-                font-size: 14px;
-
-                @media (min-width: map_get($grid-breakpoints, sm)) {
-                    font-size: 16px;
-                }
-            }
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          font-size: 16px;
         }
+      }
+
+      .description {
+        padding: 0 20px;
+        margin-bottom: 0;
+        font-size: 14px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 50;
+
+    &:hover {
+
+      .line {
+        opacity: 1;
+      }
     }
 
-    .close-modal {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        z-index: 50;
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background: #fff;
+      opacity: .5;
+      transition: .5s;
 
-        &:hover {
+      &--left {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
 
-            .line {
-                opacity: 1;
-            }
-        }
-
-        .line {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 20px;
-            height: 2px;
-            background: #fff;
-            opacity: .5;
-            transition: .5s;
-
-            &--left {
-                transform: translate(-50%, -50%) rotate(-45deg);
-            }
-
-            &--right {
-                transform: translate(-50%, -50%) rotate(45deg);
-            }
-        }
+      &--right {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
     }
+  }
 
-    &-header {
+  &-header {
 
-        .title {
-            margin-bottom: 60px;
-            text-transform: uppercase;
-            color: $primary;
-            text-shadow: 0px 3px 45px rgba(237, 201, 57, 0.28);
-        }
+    .title {
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      color: $primary;
+      text-shadow: 0px 3px 45px rgba(237, 201, 57, 0.28);
     }
+  }
 
-    &--car {
-        background-color: darken($dark, 5%);
-        color: #fff;
-        padding: 20px 20px 0;
-    }
+  &--car {
+    background-color: darken($dark, 5%);
+    color: #fff;
+    padding: 20px 20px 0;
+  }
 }
 
 .car-modal {
-    &__image {
-        margin: -20px;
-        padding-top: 56.25%;
-        position: relative;
+  &__image {
+    margin: -20px;
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    left: 55px;
+    bottom: -25px;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 4;
+    transition: .5s;
+    color: $dark;
+    margin-bottom: 0;
+
+    &::before {
+      content: '';
+      @extend %pos;
+      left: -20px;
+      right: -20px;
+      background: $primary;
+      transform: skew(-20deg);
+      z-index: -4;
+    }
+  }
+
+  &__body {
+    margin-top: 55px;
+    font-size: 0.8rem;
+
+    .table td {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      vertical-align: bottom !important;
+      color: #fff;
+
+      &:nth-child(2) {
+        white-space: nowrap;
+        font-size: 1rem;
+      }
     }
 
-    &__title {
-        position: absolute;
-        left: 55px;
-        bottom: -25px;
-        padding: 15px 0;
-        display: inline-block;
-        font-size: 18px;
-        z-index: 4;
-        transition: .5s;
-        color: $dark;
-        margin-bottom: 0;
-
-        &::before {
-            content: '';
-            @extend %pos;
-            left: -20px;
-            right: -20px;
-            background: $primary;
-            transform: skew(-20deg);
-            z-index: -4;
-        }
+    .total {
+      border-top: 1px solid rgba(#fff, 0.15);
+      color: #fff;
     }
+  }
 
-    &__body {
-        margin-top: 55px;
-        font-size: 0.8rem;
+  &__footer {
+    background-color: $dark;
+    padding: 10px 20px;
+    margin: 0 -20px;
 
-        .table td {
-            padding-top: 1px;
-            padding-bottom: 1px;
-            vertical-align: bottom !important;
-            color: #fff;
-
-            &:nth-child(2) {
-                white-space: nowrap;
-                font-size: 1rem;
-            }
-        }
-
-        .total {
-            border-top: 1px solid rgba(#fff, 0.15);
-            color: #fff;
-        }
+    .logo {
+      margin-right: 15px;
+      height: 20px;
+      background-size: contain;
     }
+  }
 
-    &__footer {
-        background-color: $dark;
-        padding: 10px 20px;
-        margin: 0 -20px;
+  &-header {
+    margin-bottom: 30px;
 
-        .logo {
-            margin-right: 15px;
-            height: 20px;
-            background-size: contain;
-        }
+    .title {
+      color: #fff;
     }
+  }
 }
 
 .modal-mask {
-    @extend %pos;
-    position: fixed;
-    background: rgba(#000, .8);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 799;
-    transition: .5s;
+  @extend %pos;
+  position: fixed;
+  background: rgba(#000, .8);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 799;
+  transition: .5s;
 
-    &.active {
-        opacity: 1;
-        pointer-events: all;
-    }
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 }

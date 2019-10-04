@@ -13,6 +13,7 @@
     "bootstrap": "^4.1.1",
     "cocoen": "^2.0.5",
     "flickity": "^2.1.2",
+    "flickity-as-nav-for": "^2.0.1",
     "imagesloaded": "^4.1.4",
     "imask": "^4.1.1",
     "imports-loader": "^0.8.0",
